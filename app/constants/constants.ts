@@ -1,4 +1,4 @@
-import { CaseStudiesTypes, NavbarTypes, Partners, ProcessCardState, Services, TeamTypes } from '../types/types';
+import { CaseStudiesTypes, NavbarTypes, Partners, ProcessCardState, Services, TeamTypes, TestimonialsTypes } from '../types/types';
 
 
 export const navbarLinks: NavbarTypes[] = [
@@ -53,4 +53,13 @@ export const processData: ProcessCardState[] = [
   {id: 4, title: 'Monitoring and Optimization', description: 'Monitoring and Optimization involve continuous tracking and analysis of processes, strategies, and performance metrics. Adjustments and refinements are made to ensure efficient and effective operations for sustained success.'},
   {id: 5, title: 'Reporting and Communication', description: 'Reporting and Communication involve conveying insights, outcomes, and progress resulting from strategies and actions. Clear and transparent communication fosters alignment, informed decision-making, and stakeholder engagement.'},
   {id: 6, title: 'Continual Improvement', description: 'Continual Improvement is an ongoing process aimed at enhancing systems, processes, and outcomes. It involves identifying areas for enhancement, implementing changes, and consistently iterating to achieve higher efficiency, effectiveness, and quality over time.'},
+]
+
+export const testimonialsData: TestimonialsTypes[] = [
+  {id: 1, name: 'John Smith', title: 'John Smith Marketing Director at XYZ Corp', text: '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."'},
+  {id: 2, name: 'John Smith', title: 'John Smith Marketing Director at XYZ Corp', text: '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."'},
+  {id: 3, name: 'John Smith', title: 'John Smith Marketing Director at XYZ Corp', text: '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."'},
+  {id: 4, name: 'John Smith', title: 'John Smith Marketing Director at XYZ Corp', text: '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."'},
+  {id: 5, name: 'John Smith', title: 'John Smith Marketing Director at XYZ Corp', text: '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."'},
+  {id: 6, name: 'John Smith', title: 'John Smith Marketing Director at XYZ Corp', text: '"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."'},
 ]

@@ -42,3 +42,10 @@ export interface ProcessCardState {
   title: string;
   description: string;
 }
+
+export interface TestimonialsTypes{
+  id: number,
+  name: string,
+  text: string,
+  title: string,
+}
