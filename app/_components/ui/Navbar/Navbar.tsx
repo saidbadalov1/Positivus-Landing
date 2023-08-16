@@ -1,6 +1,6 @@
 'use client';
 
-import { Link, Element } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 import { navbarLinks } from '@/app/constants/constants';
 import { NavbarTypes } from '@/app/types/types';
@@ -12,7 +12,7 @@ const Navbar = () => {
     <header className='bg-white fixed top-0 left-0 right-0 z-50'>
       <div className='py-4 flex justify-between items-center container'>
         <Link to={'about-us'}>
-          <LogoIcon />
+          <LogoIcon white={false} />
         </Link>
         <nav className='flex gap-10 items-center'>
           {navbarLinks.map((nav: NavbarTypes, i: number) => (

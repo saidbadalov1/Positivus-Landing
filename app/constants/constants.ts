@@ -1,4 +1,4 @@
-import { CaseStudiesTypes, NavbarTypes, Partners, Services, TeamTypes } from '../types/types';
+import { CaseStudiesTypes, NavbarTypes, Partners, ProcessCardState, Services, TeamTypes } from '../types/types';
 
 
 export const navbarLinks: NavbarTypes[] = [
@@ -44,4 +44,13 @@ export const teamData:TeamTypes[] = [
   {id: 3, name: 'Emily Johnson', title: 'PPC Manager', experience: '3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis' , avatar: '/images/avatar2.png', linkedin: 'https://www.linkedin.com/in/said-badalov-a8b436219/'},
   {id: 4, name: 'Brian Williams', title: 'Social Media Specialist', experience: '4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement' , avatar: '/images/avatar.png', linkedin: 'https://www.linkedin.com/in/said-badalov-a8b436219/'},
   {id: 5, name: 'Sarah Kim', title: 'Content Creator', experience: '2+ years of experience in writing and editing. Skilled in creating compelling, SEO-optimized content for various industries' , avatar: '/images/avatar.png', linkedin: 'https://www.linkedin.com/in/said-badalov-a8b436219/'},
+]
+
+export const processData: ProcessCardState[] = [
+  {id: 1, title: 'Consultation', description: 'During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.'},
+  {id: 2, title: 'Research and Strategy Development', description: 'Research and Strategy Development involves thorough investigation and analysis to inform effective decision-making. It encompasses data gathering, trend identification, and competitive analysis. Successful strategies are then formulated based on insights gained, enabling organizations to achieve goals, optimize resources, and adapt to evolving market dynamics.'},
+  {id: 3, title: 'Implementation', description: 'Implementation refers to the practical execution of strategies and plans derived from research and analysis. It involves translating ideas into actions, deploying resources, and monitoring progress to achieve desired outcomes.'},
+  {id: 4, title: 'Monitoring and Optimization', description: 'Monitoring and Optimization involve continuous tracking and analysis of processes, strategies, and performance metrics. Adjustments and refinements are made to ensure efficient and effective operations for sustained success.'},
+  {id: 5, title: 'Reporting and Communication', description: 'Reporting and Communication involve conveying insights, outcomes, and progress resulting from strategies and actions. Clear and transparent communication fosters alignment, informed decision-making, and stakeholder engagement.'},
+  {id: 6, title: 'Continual Improvement', description: 'Continual Improvement is an ongoing process aimed at enhancing systems, processes, and outcomes. It involves identifying areas for enhancement, implementing changes, and consistently iterating to achieve higher efficiency, effectiveness, and quality over time.'},
 ]

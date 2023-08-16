@@ -36,3 +36,9 @@ export interface TeamTypes{
   avatar: string,
   linkedin: string
 }
+
+export interface ProcessCardState {
+  id: number;
+  title: string;
+  description: string;
+}

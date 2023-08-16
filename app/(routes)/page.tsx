@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect } from 'react';
 import {
   CaseStudies,
   Contact,
@@ -13,12 +14,13 @@ import {
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 export default function HomePage() {
   useEffect(() => {
     AOS.init({
-      duration: 2500,
+      duration: 1000,
     });
   }, []);
 
