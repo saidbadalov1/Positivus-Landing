@@ -18,7 +18,7 @@ const Navbar = () => {
     <header
       className={`${
         scrollPosition > 0 ? 'bg-white shadow-xl py-0.5' : 'bg-transparent py-0'
-      }  fixed top-0 left-0 right-0 z-50 transition-all lg:block ${
+      }  fixed top-0 left-0 right-0 z-50 transition-all xl:block ${
         open ? 'bg-white fixed h-screen inset-0' : ''
       }`}
     >
@@ -27,10 +27,10 @@ const Navbar = () => {
           <LogoIcon white={false} />
         </Link>
         <nav
-          className={`flex gap-10 lg:items-center transition-all ${
+          className={`flex gap-10 xl:items-center transition-all ${
             open
               ? 'absolute top-40 opacity-100 flex-col'
-              : 'opacity-0 h-0 w-0 overflow-hidden'
+              : 'opacity-0 h-0 w-0 overflow-hidden xl:opacity-100 xl:h-auto xl:w-auto'
           }`}
         >
           {navbarLinks.map((nav: NavbarTypes, i: number) => (
@@ -53,7 +53,7 @@ const Navbar = () => {
         </nav>
         <button
           onClick={() => setOpen((prev) => !prev)}
-          className='flex flex-col gap-1.5 w-6 justify-center items-center relative -mt-4 lg:hidden'
+          className='flex flex-col gap-1.5  justify-center items-center relative  xl:hidden h-6 w-6'
         >
           <div
             className={`w-full h-0.5 bg-dark rounded-lg absolute transition-all ${
