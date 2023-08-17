@@ -18,7 +18,7 @@ const Contact = () => {
       />
       <div className='mt-20'>
         <LargeCard classNames='bg-open overflow-hidden'>
-          <div className='flex'>
+          <div className='lg:flex'>
             <form id='contact-form' className='flex-1 flex flex-col gap-8'>
               <Input name='Name' placeholder='Name' type='text' />
               <Input name='Email' placeholder='Email' type='email' />
@@ -27,7 +27,7 @@ const Contact = () => {
                 <h4>Send Message</h4>
               </Button>
             </form>
-            <div className='flex-1 relative'>
+            <div className='flex-1 relative lg:block hidden'>
               <Image
                 src={illustration}
                 alt='illustration'

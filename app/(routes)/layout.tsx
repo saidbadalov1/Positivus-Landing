@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Space_Grotesk } from 'next/font/google';
-import { Footer, Navbar } from '../_components/ui/ui';
+import { Footer, Navbar } from '../components/ui/ui';
 import '../styles/globals.css';
 
 const SpaceGrotesk = Space_Grotesk({ subsets: ['latin'] });
@@ -18,11 +18,9 @@ export default function RootLayout({
   return (
     <html lang='en' className='scroll-smooth'>
       <body suppressHydrationWarning={true} className={SpaceGrotesk.className}>
-        <main className='container'>
-          <Navbar />
-          {children}
-          <Footer />
-        </main>
+        <Navbar />
+        <main className='container'>{children}</main>
+        <Footer />
       </body>
     </html>
   );

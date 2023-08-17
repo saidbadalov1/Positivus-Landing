@@ -12,7 +12,7 @@ const Services = () => {
         title='Services'
         description='At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:'
       />
-      <div className='mt-20 grid grid-cols-2 gap-10 '>
+      <div className='mt-20 grid lg:grid-cols-2 gap-10'>
         {servicesData.map((service: Services) => (
           <ServiceCard key={service.id} service={service} />
         ))}
@@ -20,7 +20,7 @@ const Services = () => {
       <div className='mt-24'>
         <LargeCard classNames='bg-open relative'>
           <div className='flex'>
-            <div className='flex-1 flex flex-col gap-6'>
+            <div className='lg:flex-1 flex flex-col gap-6'>
               <h3>Let’s make things happen</h3>
               <p>
                 Contact us today to learn more about how our digital marketing
@@ -30,11 +30,11 @@ const Services = () => {
                 <h4>Get your free proposal</h4>
               </Button>
             </div>
-            <div className='flex-1 flex justify-end'>
+            <div className='lg:flex-1 flex justify-end'>
               <Image
                 src={illustration}
                 alt='illustration'
-                className='absolute -top-6'
+                className='absolute -top-6 lg:block hidden'
               />
             </div>
           </div>

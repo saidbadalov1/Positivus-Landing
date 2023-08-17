@@ -7,28 +7,30 @@ const ProcessCard = (props: ProcessCardState) => {
 
   return (
     <div
-      className={`w-full px-12 py-10 flex flex-col transition-all cursor-pointer border border-dark rounded-[45px] shadow-[0px_5px_0px_0px_#191A23] ${
+      className={`w-full lg:px-12 px-6 py-10 flex flex-col transition-all cursor-pointer border border-dark rounded-[45px] shadow-[0px_5px_0px_0px_#191A23] ${
         open ? 'bg-green divide-y divide-dark' : 'bg-open'
       }`}
       onClick={() => setOpen((prev) => !prev)}
     >
       <div
-        className={`${open ? 'pb-7' : ''} flex justify-between items-center`}
+        className={`${
+          open ? 'pb-7' : ''
+        } flex justify-between items-center lg:gap-0 gap-2`}
       >
-        <div className='flex gap-6 items-center'>
-          <h1>0{id}</h1>
-          <h2>{title}</h2>
+        <div className='flex lg:gap-6 gap-3 items-center'>
+          <h1 className='text-3xl lg:text-6xl'>0{id}</h1>
+          <h2 className='text-lg lg:text-3xl'>{title}</h2>
         </div>
-        <button className='w-14 h-14 flex items-center justify-center bg-open rounded-full border border-dark'>
+        <button className='lg:w-14 lg:h-14 py-3.5 px-2.5 flex items-center justify-center bg-open rounded-full border border-dark'>
           <div
             className={`${
               open ? 'opacity-0' : 'opacity-100'
-            } h-1 w-4 bg-black transition-opacity duration-300`}
+            } lg:h-1 h-0.5 lg:w-4 w-3 bg-black transition-opacity duration-300`}
           ></div>
           <div
             className={`${
               open ? 'rotate-0' : 'rotate-90'
-            } h-1 w-4 bg-black  absolute transition-transform duration-500`}
+            } lg:h-1 h-0.5 lg:w-4 w-3 bg-black  absolute transition-transform duration-500`}
           ></div>
         </button>
       </div>

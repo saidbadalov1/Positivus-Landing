@@ -11,8 +11,18 @@ const Testimonials = () => {
     infinite: true,
     slidesToShow: 1,
     speed: 500,
+    arrows: false,
     centerPadding: '60px',
     dots: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+        },
+      },
+    ],
     appendDots: (dots: any) => <ul>{dots}</ul>,
     customPaging: () => (
       <div className='ft-slick__dots--custom'>
@@ -34,11 +44,10 @@ const Testimonials = () => {
               <div className='border border-green py-12 px-14 rounded-[45px] text-white'>
                 <p>{testimonial.text}</p>
               </div>
-              <div className='pl-20 pt-10'>
+              <div className='lg:pl-20 pl-4 lg:pr-0 pr-4 pt-10'>
                 <h4 className='text-green'>{testimonial.name}</h4>
                 <p className='text-white'>{testimonial.title}</p>
               </div>
-              <div></div>
             </div>
           ))}
         </Slider>

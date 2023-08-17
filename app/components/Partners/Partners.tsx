@@ -6,7 +6,7 @@ const Partners = () => {
     <section
       data-aos='fade-right'
       id='partners'
-      className='flex justify-between items-center'
+      className='flex flex-wrap justify-between items-center'
     >
       {partners.map((partner) => (
         <div key={partner.id}>

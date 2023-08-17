@@ -10,7 +10,7 @@ const Team = () => {
         title='Team'
         description='Meet the skilled and experienced team behind our successful digital marketing strategies'
       />
-      <div className='mt-20 grid grid-cols-3 gap-10'>
+      <div className='mt-20 grid lg:grid-cols-3 gap-10'>
         {teamData.map((mate: TeamTypes) => (
           <TeamCard key={mate.id} mate={mate} />
         ))}

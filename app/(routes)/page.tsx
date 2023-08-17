@@ -10,7 +10,7 @@ import {
   Services,
   Team,
   Testimonials,
-} from '../_components/components';
+} from '../components/components';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';

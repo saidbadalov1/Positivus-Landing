@@ -4,6 +4,7 @@ const LogoIcon = ({ white }: { white: boolean }) => {
       <svg
         width='220'
         height='36'
+        className='lg:w-[220px] w-[144px]'
         viewBox='0 0 220 36'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'

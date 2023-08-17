@@ -12,7 +12,7 @@ const Hero = () => {
         <div className='flex-1'>
           <HeroContent />
         </div>
-        <div className='flex-1'>
+        <div className='flex-1 lg:flex justify-end hidden'>
           <HeroImage />
         </div>
       </div>

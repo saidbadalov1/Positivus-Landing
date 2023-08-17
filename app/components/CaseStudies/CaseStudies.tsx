@@ -13,9 +13,14 @@ const CaseStudies = () => {
       />
       <div className='mt-20'>
         <LargeCard classNames='bg-dark'>
-          <div className='flex justify-between text-white divide-x'>
+          <div className='flex justify-between lg:flex-row flex-col text-white lg:divide-x divide-y lg:divide-y-0 lg:gap-0 gap-5'>
             {caseStudiesData.map((study: CaseStudiesTypes, i: number) => (
-              <div key={i} className={`px-16 flex flex-col gap-5`}>
+              <div
+                key={i}
+                className={`lg:px-16 flex flex-col gap-5 lg:pt-0 ${
+                  i == 0 ? '' : 'pt-5'
+                }`}
+              >
                 <p>{study.text}</p>
                 <div>
                   <Link

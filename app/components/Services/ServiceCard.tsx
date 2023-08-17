@@ -9,7 +9,7 @@ const ServiceCard = ({ service }: { service: Services }) => {
       className={`border border-dark rounded-[45px] shadow-[0px_5px_0px_0px_#191A23] p-12 flex bg-${service.bgColor}`}
       key={service.id}
     >
-      <div className='flex-1 flex flex-col justify-between'>
+      <div className='flex-1 flex flex-col lg:gap-0 gap-10 justify-between'>
         <div className='inline-flex flex-col'>
           {service.title.map((title: string, i: number) => (
             <h3
@@ -38,7 +38,8 @@ const ServiceCard = ({ service }: { service: Services }) => {
           src={service.image}
           alt={service.title[0]}
           width={210}
-          height={160}
+          height={200}
+          className='mt-20 lg:mt-0'
         />
       </div>
     </div>
