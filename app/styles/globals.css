@@ -8,6 +8,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.active {
+  border-color: #191a23;
+}
+
 h1 {
   font-size: 60px;
   font-style: normal;
