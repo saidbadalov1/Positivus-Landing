@@ -30,7 +30,7 @@ const Navbar = () => {
           className={`flex gap-10 xl:items-center transition-all ${
             open
               ? 'absolute top-40 opacity-100 flex-col'
-              : 'opacity-0 h-0 w-0 overflow-hidden xl:opacity-100 xl:h-auto xl:w-auto'
+              : 'opacity-0 h-0 w-0 overflow-hidden xl:opacity-100'
           }`}
         >
           {navbarLinks.map((nav: NavbarTypes, i: number) => (
@@ -53,7 +53,7 @@ const Navbar = () => {
         </nav>
         <button
           onClick={() => setOpen((prev) => !prev)}
-          className='flex flex-col gap-1.5  justify-center items-center relative  xl:hidden h-6 w-6'
+          className='flex flex-col gap-1.5 justify-center items-center relative  xl:hidden h-6 w-6'
         >
           <div
             className={`w-full h-0.5 bg-dark rounded-lg absolute transition-all ${
