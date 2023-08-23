@@ -17,6 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className='scroll-smooth'>
+      <head>
+        <link rel='icon' type='image/png' href='/favicon.png' />
+      </head>
       <body suppressHydrationWarning={true} className={SpaceGrotesk.className}>
         <Navbar />
         <main className='container'>{children}</main>
