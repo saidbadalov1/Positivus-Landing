@@ -27,25 +27,26 @@ const Navbar = () => {
           <LogoIcon white={false} />
         </Link>
         <nav
-          className={`flex gap-10 xl:items-center transition-all ${
+          className={` gap-10 xl:items-center transition-all ${
             open
-              ? 'absolute top-40 opacity-100 flex-col'
-              : 'opacity-0 h-0 w-0 overflow-hidden xl:opacity-100 xl:h-auto xl:w-auto'
+              ? 'absolute top-40 left-5 opacity-100 !inline-flex flex-col'
+              : 'flex opacity-0 h-0 w-0 overflow-hidden xl:opacity-100 xl:h-auto xl:w-auto'
           }`}
         >
           {navbarLinks.map((nav: NavbarTypes, i: number) => (
-            <Link
-              key={i}
-              to={nav.url}
-              smooth
-              spy
-              onClick={() => setOpen(false)}
-              activeClass='active'
-              duration={300}
-              className='cursor-pointer border-b-2 border-white transition-all'
-            >
-              <h4>{nav.name}</h4>
-            </Link>
+            <div key={i}>
+              <Link
+                to={nav.url}
+                smooth
+                spy
+                onClick={() => setOpen(false)}
+                activeClass='active'
+                duration={300}
+                className='cursor-pointer border-b-2 border-white transition-all inline-block'
+              >
+                <h4>{nav.name}</h4>
+              </Link>
+            </div>
           ))}
           <Button classNames='bg-transparent'>
             <h4>Request a quote</h4>
