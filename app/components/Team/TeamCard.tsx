@@ -5,7 +5,10 @@ import { LinkedinIcon } from '@/app/_assets/icons/icons';
 
 const TeamCard = ({ mate }: { mate: TeamTypes }) => {
   return (
-    <div className='bg-white p-10 flex flex-col divide-y rounded-[45px] border border-dark shadow-[0px_5px_0px_0px_#191A23]'>
+    <div
+      data-aos='fade-right'
+      className='bg-white p-10 flex flex-col divide-y rounded-[45px] border border-dark shadow-[0px_5px_0px_0px_#191A23]'
+    >
       <div className='pb-7 flex justify-between gap-3'>
         <Image src={mate.avatar} width={100} height={100} alt={mate.name} />
         <div className='self-end'>

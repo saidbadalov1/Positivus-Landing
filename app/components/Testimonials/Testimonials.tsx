@@ -37,7 +37,7 @@ const Testimonials = () => {
         title='Testimonials'
         description='Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services'
       />
-      <div className='mt-20 py-20 bg-dark rounded-[45px]'>
+      <div data-aos='fade-right' className='mt-20 py-20 bg-dark rounded-[45px]'>
         <Slider {...settings} className='pb-20'>
           {testimonialsData.map((testimonial: TestimonialsTypes) => (
             <div key={testimonial.id}>

@@ -12,7 +12,7 @@ const Services = () => {
         title='Services'
         description='At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:'
       />
-      <div className='mt-20 grid lg:grid-cols-2 gap-10'>
+      <div className='mt-20 grid lg:grid-cols-2 gap-10 '>
         {servicesData.map((service: Services) => (
           <ServiceCard key={service.id} service={service} />
         ))}

@@ -6,6 +6,7 @@ import { ArrowIcon } from '@/app/_assets/icons/icons';
 const ServiceCard = ({ service }: { service: Services }) => {
   return (
     <div
+      data-aos='fade-right'
       className={`border border-dark rounded-[45px] shadow-[0px_5px_0px_0px_#191A23] p-12 flex bg-${service.bgColor}`}
       key={service.id}
     >
