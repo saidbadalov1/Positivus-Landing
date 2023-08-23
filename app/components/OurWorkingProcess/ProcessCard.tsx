@@ -8,13 +8,13 @@ const ProcessCard = (props: ProcessCardState) => {
   return (
     <div
       className={`w-full lg:px-12 px-6 py-10 flex flex-col transition-all cursor-pointer border border-dark rounded-[45px] shadow-[0px_5px_0px_0px_#191A23] ${
-        open ? 'bg-green divide-y divide-dark' : 'bg-open'
+        open ? 'bg-green ' : 'bg-open'
       }`}
       onClick={() => setOpen((prev) => !prev)}
     >
       <div
         className={`${
-          open ? 'pb-7' : ''
+          open ? '' : ''
         } flex justify-between items-center lg:gap-0 gap-2`}
       >
         <div className='flex lg:gap-6 gap-3 items-center'>
@@ -39,7 +39,8 @@ const ProcessCard = (props: ProcessCardState) => {
           open ? 'pt-7 h-auto opacity-100' : '!h-0 opacity-0'
         } transition-all overflow-hidden duration-100`}
       >
-        <p>{description}</p>
+        <div className='bg-black w-full h-px'></div>
+        <p className='mt-7'>{description}</p>
       </div>
     </div>
   );
