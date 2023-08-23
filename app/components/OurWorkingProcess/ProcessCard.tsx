@@ -7,7 +7,6 @@ const ProcessCard = (props: ProcessCardState) => {
 
   return (
     <div
-      data-aos='fade-right'
       className={`w-full lg:px-12 px-6 py-10 flex flex-col transition-all cursor-pointer border border-dark rounded-[45px] shadow-[0px_5px_0px_0px_#191A23] ${
         open ? 'bg-green divide-y divide-dark' : 'bg-open'
       }`}
